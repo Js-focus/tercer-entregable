@@ -1,38 +1,71 @@
+html{
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+  font-size: 3rem;
+}
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+  background-color: #082032;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contain{
+  height: 100%;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-box{
+  width: 100vw;
+  height: 425px;
+  background-image: url("https://s.yimg.com/ny/api/res/1.2/7S_Mw_lbv.XEcPhZ2hs5xg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMA--/https://s.yimg.com/uu/api/res/1.2/1vmOwy3XhZ.6mVnaC45Sag--~B/aD0zMDA7dz02MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/es/qore_584/cff544018c918caba2028a876353cb90");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-contain{
+  position: relative;
+  top: 12rem;
+  left: 30rem;
+  
+}
+.box-contain input{
+  background-color: #dbc88a;
+  height: 2rem;
+  border: 2px solid rgb(100, 72, 72);
+  border-radius: 4px;  
+  margin: .5rem;
+  padding-left: 1rem;
+}
+.box-contain button{
+  width: 9rem;
+  height: 1.5rem;
+  
+  background-color: rgb(78, 177, 108);
+  border: none;
+  box-shadow: 2px 2px 8px rgb(100, 72, 72);
+  border-radius: .5rem;
+}
+.local-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 98%;
+  height: 10rem;
+  background-color: rgba(4, 82, 43, 0.5);
+  padding: .5rem; 
 }
-
-.App-link {
-  color: #61dafb;
+.local-info ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.local-info ul li{
+  font-size: 1.5rem;
+}
+.residents-list{
+  display: grid;
+  grid-template-columns:  20% 20% 20% ;
 }
