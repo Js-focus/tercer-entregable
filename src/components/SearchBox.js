@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import SearchList from './SearchList';
 
 const SearchBox = ({setData}) => {
     const [search, setSearch] = useState(""); 
@@ -8,6 +9,7 @@ const SearchBox = ({setData}) => {
     const searchType = () => {
         axios.get(`https://rickandmortyapi.com/api/location/?name=${search}`)
         .then(res => setData(res.data.results[0]))    
+        setSearch("");
     }
 
     return (
@@ -24,6 +26,7 @@ const SearchBox = ({setData}) => {
                     }}
                     value={search}
                 />
+                <SearchList search={search} setSearch={setSearch}/>
                 <div>
                     <button onClick={searchType}>
                         lest go Morty! 

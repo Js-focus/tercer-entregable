@@ -16,9 +16,9 @@ const ResidentInfo = ({url}) => {
             <h2> {residentIfo?.name} </h2>
             <img src={residentIfo?.image} alt="" />
             <ul>
-                <li> {residentIfo?.status} </li>
-                <li> {residentIfo?.origin?.name} </li>
-                <li> {residentIfo?.episode?.length} </li>
+                <li> <strong>Status:</strong> {residentIfo?.status} </li>
+                <li> <strong>Origin:</strong> {residentIfo?.origin?.name} </li>
+                <li> <strong>Episodes in which appears:</strong> {residentIfo?.episode?.length} </li>
             </ul>
         </div>
     );
