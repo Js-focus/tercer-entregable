@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import SearchList from './SearchList';
 
 const SearchBox = ({setData}) => {
     const [search, setSearch] = useState(""); 
